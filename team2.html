@@ -1,0 +1,31 @@
+---
+layout: base
+root: .
+title: Our Team2
+---
+<h2 id="advisory">Advisory Board</h2>
+
+
+
+{% for bio_filename in site.team_bios.advisory %}
+<div class="row-fluid">
+  <div class="span6" style="padding-bottom:15px">{% include people/{{bio_filename}} %}</div>
+</div>
+{% endfor %}
+
+<h2 id="instructors">Instructors</h2>
+
+{% for bio_filename in site.team_bios.instructors %}
+<div class="row-fluid">
+  <div class="span6" style="padding-bottom:15px">{% include people/{{bio_filename}} %}</div>
+</div>
+{% endfor %}
+
+
+<h2 id="support">Support</h2>
+
+{% for bio_filename in site.team_bios.support %}
+<div class="row-fluid">
+  <div class="span6" style="padding-bottom:15px">{% include people/{{bio_filename}} %}</div>
+</div>
+{% endfor %}
